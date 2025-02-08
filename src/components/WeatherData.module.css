@@ -1,11 +1,16 @@
 .weatherContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  
     text-align: center;
     background: linear-gradient(to bottom, #87CEFA, #4682B4);
     padding: 20px;
     border-radius: 10px;
     color: white;
     max-width: 300px;
-    margin: auto;
+    
   }
 
   .weather{
@@ -14,13 +19,13 @@
     display: flex;
     justify-content: center;
     
-    gap: 5px;
   }
   
   .weatherTitle {
     font-size: 44px;
     font-weight: bold;
-    margin: 0%;
+    margin: 2%;
+
   }
 
   .celsius{
@@ -32,6 +37,10 @@
   .temperature {
     font-size: 44px;
     position: relative;
+  }
+  .otherData {
+    margin: 2%;
+    font-size: 24px;
   }
   
   .weatherIcon {

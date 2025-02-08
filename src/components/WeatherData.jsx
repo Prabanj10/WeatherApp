@@ -52,9 +52,9 @@ const WeatherData = () => {
             />
             <h1 className={styles.temperature}>{weatherData.main.temp.toFixed(1)}<span className={styles.celsius}>°C</span></h1>
           </div>
-          <h1 className={styles.weatherTitle}>{weatherData.weather[0].main}</h1>
-          <h1>Humidity {weatherData.main.humidity}%</h1>
-          <h1>Wind {weatherData.wind.speed}km/h</h1>
+          <h2 className={styles.weatherTitle}>{weatherData.weather[0].main}</h2>
+          <h2 className={styles.otherData}>Humidity {weatherData.main.humidity}%</h2>
+          <h2 className={styles.otherData}>Wind {weatherData.wind.speed}km/h</h2>
         </div>
       )}
     </div>
