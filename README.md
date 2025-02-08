@@ -4,7 +4,7 @@ A responsive weather dashboard built with **React.js**, utilizing the **OpenWeat
 
 ## 🚀 Features
 - 🌍 **Search by City**: Enter a city name to get real-time weather details.
-- 🌡 **Temperature in Celsius**: Converts temperature from Kelvin to Celsius.
+
 - 🔄 **Auto-Refreshing Data**: Uses polling to update weather every 30 seconds.
 - ⚠️ **Error Handling**: Gracefully handles invalid city names and network errors.
 - 🎨 **Modern UI**: Styled with **CSS Modules**.
