@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import styles from "./ErrorMessage.module.css"
 
 const ErrorMessage = () => {
   const error = useSelector((state) => state.weather.error);
@@ -6,7 +7,7 @@ const ErrorMessage = () => {
 
   return (
     <div>
-      <p>{error}</p>
+      <p className={styles.error}>{error}</p>
     </div>
   );
 };
