@@ -2,19 +2,30 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+position: relative;
   
     text-align: center;
     background: linear-gradient(to bottom, #87CEFA, #4682B4);
-    padding: 20px;
+    padding: 40px;
+    padding-right: 50px;
     border-radius: 10px;
     color: white;
     max-width: 300px;
     
   }
 
+  .place{
+    position: absolute;
+    top: 0%;
+    right: 5px;
+    font-size: 16px;
+    padding: 10px;
+
+  }
+
   .weather{
     height: 100px;
+    padding-top: 40px;
    
     display: flex;
     justify-content: center;
@@ -38,9 +49,17 @@
     font-size: 44px;
     position: relative;
   }
+
+  .remainingData{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin-left: 0%;
+  }
   .otherData {
     margin: 2%;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 100;
   }
   
   .weatherIcon {

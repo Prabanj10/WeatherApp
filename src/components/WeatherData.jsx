@@ -44,6 +44,7 @@ const WeatherData = () => {
     <div>
       {weatherData && (
         <div className={styles.weatherContainer}>
+        <h1 className={styles.place}>{weatherData.name}</h1>
           <div className={styles.weather}>
             <img
               className={styles.weatherIcon}
@@ -53,8 +54,10 @@ const WeatherData = () => {
             <h1 className={styles.temperature}>{weatherData.main.temp.toFixed(1)}<span className={styles.celsius}>°C</span></h1>
           </div>
           <h2 className={styles.weatherTitle}>{weatherData.weather[0].main}</h2>
+          <div className={styles.remainingData}>
           <h2 className={styles.otherData}>Humidity {weatherData.main.humidity}%</h2>
           <h2 className={styles.otherData}>Wind {weatherData.wind.speed}km/h</h2>
+          </div>
         </div>
       )}
     </div>
