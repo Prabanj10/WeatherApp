@@ -1,6 +1,6 @@
 # Weather Dashboard
 
-A responsive weather dashboard built with **React.js**, utilizing the **OpenWeather API** for real-time weather updates. The application supports **Redux Toolkit** for state management and **CSS Modules** for styling.
+A responsive weather dashboard built with **React.js**, utilizing the **OpenWeather API** for real-time weather updates. The application supports **Redux Toolkit** for state management, **Redux Persist** for retaining data across page refreshes, and **CSS Modules** for styling.
 
 ## 🚀 Features
 - 🌍 **Search by City**: Enter a city name to get real-time weather details.
@@ -8,6 +8,7 @@ A responsive weather dashboard built with **React.js**, utilizing the **OpenWeat
 - 🔄 **Auto-Refreshing Data**: Uses polling to update weather every 30 seconds.
 - ⚠️ **Error Handling**: Gracefully handles invalid city names and network errors.
 - 🎨 **Modern UI**: Styled with **CSS Modules**.
+- 💾 **Persistent State**: Uses **Redux Persist** to store the last searched city and weather data even after a page refresh.
 
 ---
 
@@ -16,7 +17,6 @@ A responsive weather dashboard built with **React.js**, utilizing the **OpenWeat
 ### 1️⃣ **Clone the Repository**
 ```sh
 git clone https://github.com/prabanj10/WeatherApp.git
-
 ```
 
 ### 2️⃣ **Install Dependencies**
@@ -52,11 +52,15 @@ The app will be available at **http://localhost:5173**.
 - If the city is **not found**, an error message is displayed.
 - If there’s a **network issue**, the error message is displayed.
 
+### 💾 **Persistent State**
+- **Redux Persist** ensures that the last searched city and weather data remain available even after refreshing the page.
+
 ---
 
 ## 📦 Built With
 - ⚛ **React.js** – Frontend UI
 - 🎯 **Redux Toolkit** – Global state management
+- 💾 **Redux Persist** – State persistence across refreshes
 - 🎨 **CSS Modules** – Component styling
 - 🌍 **OpenWeather API** – Weather data provider
 
@@ -68,7 +72,3 @@ To deploy the app, run:
 npm run build
 ```
 Then, deploy the `dist` folder to **Netlify, Vercel, or GitHub Pages**.
-
----
-
-
