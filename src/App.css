@@ -1,1 +1,10 @@
 
+.app{
+    background-image: url("https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

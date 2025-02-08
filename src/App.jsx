@@ -5,8 +5,7 @@ import WeatherData from './components/WeatherData'
 
 const App = () => {
   return (
-    <div className="a">
-    <div className='app'></div>
+    <div className="app">
     <Search className='search' />
     <WeatherData/>
     <ErrorMessage/>
