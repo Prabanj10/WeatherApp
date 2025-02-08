@@ -1,19 +1,14 @@
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux';
 
 const ErrorMessage = () => {
-  const error = useSelector((state)=>state.weather.error)
-  console.log(error)
-  if(!error) return null
-
-  
-
-
+  const error = useSelector((state) => state.weather.error);
+  if (!error) return null;
 
   return (
     <div>
-      <p>{error.message}</p>
+      <p>{error}</p>
     </div>
   );
 };
 
-export default ErrorMessage
+export default ErrorMessage;
