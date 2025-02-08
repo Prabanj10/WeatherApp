@@ -50,7 +50,7 @@ const WeatherData = () => {
               src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`}
               alt="weather icon"
             />
-            <h1 className={styles.temperature}>{weatherData.main.temp}°C</h1>
+            <h1 className={styles.temperature}>{weatherData.main.temp.toFixed(1)}<span className={styles.celsius}>°C</span></h1>
           </div>
           <h1 className={styles.weatherTitle}>{weatherData.weather[0].main}</h1>
           <h1>Humidity {weatherData.main.humidity}%</h1>
