@@ -45,7 +45,7 @@ const WeatherForecast = () => {
             <p className={styles.weather}>{day.weather[0].main}</p>
             <div className={styles.remainingData}>
               <p className={styles.otherData}>Humidity {day.main.humidity} %</p>
-              <p className={styles.otherData}>Wind {day.wind.speed} km/h</p>
+              <p className={styles.otherData}>Wind {day.wind.speed.toFixed(1)} km/h</p>
             </div>
           </div>
         ))}

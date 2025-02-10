@@ -47,6 +47,7 @@ const WeatherData = () => {
       {weatherData && (
         <div className={styles.mainContainer}>
         <div className={styles.weatherContainer}>
+        <h1 className={styles.today}>Today</h1>
         <h1 className={styles.place}>{weatherData.name}</h1>
           <div className={styles.weather}>
             <img
