@@ -1,0 +1,97 @@
+.forecast{
+    padding: 30px;
+    
+}
+
+
+.forecastContainer{
+    display: flex;
+    gap: 10px;
+
+
+}
+
+.weatherContainer{  display: flex;
+    flex-direction: column;
+    justify-content: center;
+  position: relative;
+    
+      text-align: center;
+      background: linear-gradient(to bottom, #3b677e, #84b6df);
+      padding: 40px;
+      padding-right: 50px;
+      border-radius: 10px;
+      color: white;
+      max-width: 350px;
+      max-height: 200px;
+    }
+
+    .date{
+        position: absolute;
+        top: 0%;
+        left: 4%;
+
+    }
+    
+    .weatherIcon{
+        height: 70px;
+        width: 70px;
+        padding-top: 30px;
+        margin: 0%;
+    }
+
+    .temperature{
+        margin: 0%;
+        padding-bottom: 5px;
+        font-size: 22px;
+        font-weight: bold;
+        position: absolute;
+        top: 34%;
+        left: 45%;
+
+    }
+
+
+    .weather{
+        margin: 0%;
+        font-size: 22px;
+        font-weight: bold;
+
+    }
+
+    .remainingData{
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        gap: 13px;
+        font-weight: 100;
+        padding-top: 10px;
+
+    }
+
+    .otherData{
+
+
+    }
+
+@media only screen and (max-width: 767px) {
+
+    .temperature{
+        margin: 0%;
+        padding-bottom: 5px;
+        font-size: 22px;
+        font-weight: bold;
+        position: absolute;
+        top: 30%;
+        left: 55%
+
+    }
+
+    .forecastContainer{
+        flex-direction: column;
+    }
+
+
+
+  }
+  

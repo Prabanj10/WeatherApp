@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { weatherInfo, errorHandle } from '../redux/weatherSlice';
 import { useEffect } from 'react';
 import styles from './WeatherData.module.css';
+import WeatherForecast from './weatherForecast';
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 
@@ -43,6 +44,7 @@ const WeatherData = () => {
   return (
     <div>
       {weatherData && (
+        <div className={styles.mainContainer}>
         <div className={styles.weatherContainer}>
         <h1 className={styles.place}>{weatherData.name}</h1>
           <div className={styles.weather}>
@@ -58,6 +60,8 @@ const WeatherData = () => {
           <h2 className={styles.otherData}>Humidity {weatherData.main.humidity}%</h2>
           <h2 className={styles.otherData}>Wind {weatherData.wind.speed}km/h</h2>
           </div>
+        </div>
+        <WeatherForecast/>
         </div>
       )}
     </div>

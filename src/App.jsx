@@ -1,16 +1,16 @@
-import './App.css'
-import ErrorMessage from './components/ErrorMessage'
-import Search from './components/Search'
-import WeatherData from './components/WeatherData'
+import './App.css';
+import ErrorMessage from './components/ErrorMessage';
+import Search from './components/Search';
+import WeatherData from './components/WeatherData';
 
 const App = () => {
   return (
     <div className="app">
-    <Search className='search' />
-    <WeatherData/>
-    <ErrorMessage/>
+      <Search />
+      <WeatherData />
+      <ErrorMessage />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
