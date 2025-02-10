@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { weatherInfo, errorHandle } from '../redux/weatherSlice';
 import { useEffect } from 'react';
 import styles from './WeatherData.module.css';
-import WeatherForecast from './weatherForecast';
+import WeatherForecast from './WeatherForecast';
+
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 
